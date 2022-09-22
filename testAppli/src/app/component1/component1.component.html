@@ -1,0 +1,24 @@
+<div class="c1">
+<p>component1 works!</p>
+
+Ici se trouve la vue de mon premier composant
+<br/> <br/>
+{{title}}
+
+<button [disabled]="!valid" (click)="clic()" >Envoyer</button>
+
+<br/>
+<br/>
+
+<label>Prenom : </label>
+<input [(ngModel)]="prenom"/>
+
+{{prenom}}
+
+
+<app-component2 [firstname]="prenom" (change)="clicChange($event)">
+</app-component2>
+
+<br/> <br/>
+{{bonjour}}
+</div>
